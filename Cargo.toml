@@ -1,8 +1,21 @@
 [package]
 name = "rustvacation"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+amiquip = "0.4"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "consumer"
+path = "src/consumer.rs"
+
+[[bin]]
+name = "producer"
+path = "src/producer.rs"
